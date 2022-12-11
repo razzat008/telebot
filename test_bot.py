@@ -10,29 +10,27 @@ def start(update,context):
 
 def help(update,context):
     update.message.reply_text("""
-                              \nThese are currently available commands:\n
-                              /help\n
-                              /aboutme\n
-                              """)
+These are currently available commands:
+/help
+/aboutme
+""")
 
 def aboutme(update,context):
-    update.message.reply_text("""Just a regular guy with interests in coding.\n
-    My socials:\n
-    github:https://github.com/ceaser008\n
+    update.message.reply_text("""Just a regular guy with interests in coding.
+My socials:
+github:https://github.com/ceaser008
                               """)
 
 def handle_messages(update,context):
     if (update.message.text=="h") :
-        update.message.reply_text("If you meant /help then",end=" ")
         update.message.reply_text("""
-                              these are currently available commands:\n
-                              /help\n
-                              /aboutme\n
-                              """)
+If you meant /help then:
+These are currently available commands:
+/help
+/aboutme
+""")
     else:
-
         update.message.reply_text(f"{update.message.text} not found")
-
 
 updater = telegram.ext.Updater(token,use_context=True)
 disp = updater.dispatcher
