@@ -1,3 +1,3 @@
 # Telegram bot
 
-_pass_
+_**note: you can use botfather to create a bot**_
