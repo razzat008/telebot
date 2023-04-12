@@ -1,3 +1,3 @@
 # Telegram bot
 
-_**note: you can use botfather to create a bot**_
+Simple telegram bot using python.
